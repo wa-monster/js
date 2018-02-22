@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+流程控制
+    条件语句
+        if(条件判断){};
+        if(条件判断){}else{}
+        if(条件判断){}else if(条件判断){}else{}
+        if没有什么好说的,注意条件判断的运算符即可
+    switch语句
+        switch (x){
+            case 1:
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+        }
+        switch用的少，主要用于判断特定情况，比如判断周一到周日，用switch比if方便
+    循环语句
+        for(var i=0;i<10;i++){}
+            for循环，一个坑，for循环运行过程：
+                先声明变量i=0，然后判断i是否满足条件，满足执行大括号里的，然后运行i++,如果不满足，直接跳过大括号，然后i++，然后结束循环。
+                坑一：声明的变量是全局变量，并且在for循环外是正好是for循环里的i最大+1。例如for(var i=0;i<10;i++){},在for循环外，i为10.
+        while(条件判断){}
+            while无限循环，只要满足条件，因为判断条件不发生改变，所以一般判断条件里面有一个变量，在大括号对变量进行控制，或者在大括号里面使用break语句跳出
+        do{}while(条件判断)
+            同while，不同之处，在于do...while先运行一次{}在判断
+    break;
+        终止循环
+    continue;
+        终止本次循环
+</body>
+</html>
