@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<pre>
+    数组
+    数组的创建方式：
+        1.
+            var arr=new Array();
+            arr[0]=1;
+            arr[1]=2;
+            arr[2]=3;
+        2.
+            var arr=new Array(1,2,3)
+        3.
+            var arr=[1,2,3];
+        4
+            var arr=[];
+            arr[0]=1;
+            arr[1]=2;
+            arr[2]=3;
+
+    数组是一个对象，作为对象他拥有属性和方法
+    数组属性：
+        length:设置或者返回数组中元素的数目，一般称为数组长度
+        prototype：原型，让自己设置方法或属性，存放在array对象原型上
+        constructor:
+    数组方法：
+        concat():链接两个或更多的数组，并返回结果
+            例子：
+                var a=[1,2,3];var b=[4,5,6];
+                var c=a.concat(b);
+                alert(c)//1,2,3,4,5,6
+        join():把数组中的元素放入字符串，元素之间用定义的分隔符分开
+            例子
+                var a=[1,2,3]
+                var c=a.join("-")
+                alert(c);//1-2-3
+        pop():删除数组最后一个元素，并返回删除的元素
+            例子
+                var a=[1,2,3,4,5,6]
+                var b=a.pop();
+                alert(a);//1,2,3,4,5
+                alert(b);//6
+        push()：在数组最后添加一个或多个新的元素，并返回新的长度
+            例子
+                var a=[1,2,3,4,5,6]
+                var b=a.push(7,8,9);
+                alert(a);//1,2,3,4,5,6,7,8,9
+                alert(b);//9
+        shift()；删除数组开头的元素，并返回删除的元素
+            例子
+                var a=[1,2,3,4,5,6]
+                var b=a.shift();
+                alert(a);//2,3,4,5,6
+                alert(b);//1
+        unshift():在数组开头添加一个或多个新的元素，并返回新的长度
+            例子
+                var a=[1,2,3,4,5,6]
+                var b=a.unshift(0,-1,-2);
+                alert(a);//0,-1,-2,1,2,3,4,5,6
+                alert(b);//9
+        slice(): 在数组中返回选定的元素
+            例子
+                var a=[1,2,3,4,5,6]
+                var b=a.slice(2,4);//选择返回的是下标为2，3的，就说，从2开始到4为止，但不包括4
+                alert(a);//1,2,3,4,5,6
+                alert(b);//3,4
+        splice():对函数进行修改，比如删除某个特定的位置的元素，并且添加新的进去，返回被删除的元素，注意：此方法会改变原始数组
+            例子
+                var a=[1,2,3,4,5,6]
+                var b=a.splice(2,1,"xin");//2表示被删除元素开始的位置，1表示被删除元素的个数，"xin"表示添加进去的元素
+                alert(a);//1,2,xin,4,5,6
+                alert(b);//3
+        还有别的一些方法，就不写了
+</pre>
+</body>
+</html>
