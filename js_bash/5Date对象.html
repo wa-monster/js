@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<pre>
+    Date对象
+        创建方法
+            var myDate=new Date();
+        Date对象属性
+            constructor 返回对创建此对象的 Date 函数的引用。//没懂
+            prototype  使您有能力向对象添加属性和方法。
+        Date对象方法//记忆一些常用方法
+            Date():返回当前日期时间
+                例子：
+                    alert(Date())//Fri Feb 23 2018 22:00:50 GMT+0800 (中国标准时间)
+            getDate():从Date对象中返回一个月中的天数（1~31）
+                例子
+                     var myDate=new Date();
+                     var day=myDate.getDate();
+                        alert(day);//今天是几号
+            getDay():从Date对象返回星期几
+                例子
+                    var myDate=new Date();
+                    var weekday=myDate.getDay();
+                    alert(weekday);//星期几
+            getMonth():从Date对象中返回现在是几月（0~11）
+                例子
+                    var myDate=new Date();
+                    var month=myDate.getMonth();
+                    alert(month);//本月是几月ps：因为month是从0开始，所以实际月份要+1
+            getFullYear():
+                例子
+                    var myDate=new Date();
+                    var year=myDate.getFullYear();
+                    alert(year);//今年是几几年
+            getHours():从Date对象返回现在是几点
+                例子
+                    var myDate=new Date();
+                    var h=myDate.getHours();
+                    alert(h);//几点
+            getMinutes():从Date对象返回现在是多少分钟
+                例子：
+                    var myDate=new Date();
+                    var m=myDate.getMinutes();
+                    alert(m);//多少分钟
+            getSeconds():从Date对象返回现在是多少秒
+                例子
+                    var myDate=new Date();
+                    var s=myDate.getSeconds();
+                    alert(s);
+            getMilliseconds():从Date对象返回现在是多少毫秒
+                例子
+                    var myDate=new Date();
+                    var ms=myDate.getMilliseconds();
+                    alert(ms);
+            getTime();返回从1970年1月1日到现在的毫秒数
+                例子
+                    var myDate=new Date();
+                    var wa=myDate.getTime();
+                    alert(wa);
+</pre>
+</body>
+</html>

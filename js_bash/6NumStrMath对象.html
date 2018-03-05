@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<pre>
+    Number对象
+        在javascript中，数字Number也是对象
+        number对象创建；
+            var num=10;//10
+            var num=new Number();//0
+            var num=new Number(value);//value   必须是能转换成转换为数值的量，比如123，那么num=123.如果是m1a2,结果是num=NaN.
+        在js中num有表示范围，最大是±1.7976931348623157 x 10308，最小值是±5 x 10 -324；
+        在js中有精度限制，整数最多15位，小数最多17位，同时小数（浮点数）的运算不精确，所以得出结果不是100%正确。
+        js有10进制8进制16进制，2进制（未找到暂时当不存在）的写法，
+            10：num=123;
+            8:num=0123;//83
+            16:num=0x123;//291
+        num的属性
+            constructor:
+            MAX_VALUE:返回可表示的最大值
+            MIN_VALUE:返回可表示的最小值
+            NaN:非数字
+        num的方法，在这里介绍两个。
+            toString():把数字转换为字符串，并返回结果，可以通过写入参数把数字转换为别的进制,若省略就是10进制，可选参数2~36.
+                例子：
+                    var num=100;
+                    var num2=num.toString(2);
+                    alert(num2);//1100100
+            toFixed():把数字四舍五入位制定位数的小数，并返回结果。参数必填，若不填自定义为0。参数范围0~20,若超出20可能会出错
+                例子：
+                    var num = 13.30027;
+                    document.write (num.toFixed(3))
+    String
+        String字符串对象可以用于处理字符串
+        属性：
+            constructor
+            length:返回字符串长度
+            prototype
+        方法：
+            charAt():返回指定位置的字符
+            charCodeAt():返回指定位置的字符的Unicode编码
+            slice():提取指定位置的字符攒，并返回
+            split():把字符串转换为数组
+            substr():
+            substring():
+            toString():
+            indexOf():
+            match():
+            replace():
+</pre>
+
+</body>
+</html>
